@@ -1,0 +1,68 @@
+﻿*****getting error whin testing "remind:"
+GeminiDotnet.GeminiClientException: 'Error BadRequest: Function calling with a response mime type: 'application/json' is unsupported'
+
+Good news: this isn't a MAF bug or something you did wrong — it's a genuine, well-documented **Gemini API limitation**. 
+Worth understanding properly since you'll hit provider-specific quirks like this constantly in real AI engineering work.
+
+## Root cause
+The Gemini API (unlike OpenAI's) does not support sending **function/tool declarations** and requesting **`response_mime_type: application/json`** 
+in the same request. When `RunAsync<T>` runs, it sets the JSON response format under the hood — but your agent still has its three tools 
+(`GetCurrentTime`, `Add`, `LookUpFact`) attached from creation, and Gemini rejects the combination outright with a 400 error. 
+This is confirmed across many issue trackers (Google's own SDK, other agent frameworks, other languages) — it's a hard API-level constraint, 
+not something MAF or your code can work around by trying harder.
+
+## The fix: separate agents for separate jobs
+The clean solution is to **not share one agent for both tool-calling and structured extraction**. 
+Create a second, tool-less agent specifically for structured output tasks:
+
+//*********************csharp
+// Agent #1: conversational, has tools, no structured output
+AIAgent agent = chatClient.AsAIAgent(
+    instructions: "You are a concise personal assistant. Use tools when relevant instead of guessing.",
+    name: "PersonalAssistant",
+    tools: [
+        AIFunctionFactory.Create(GetCurrentTime),
+        AIFunctionFactory.Create(Add),
+        AIFunctionFactory.Create(LookUpFact)
+    ]);
+
+// Agent #2: dedicated to structured extraction, NO tools attached
+AIAgent extractorAgent = chatClient.AsAIAgent(
+    instructions: "You extract structured reminder data from user text.",
+    name: "ReminderExtractor");
+
+AgentSession session = agent.GetNewSession();
+
+/// Then in the `remind:` branch, call `extractorAgent` instead of `agent`:
+
+if (input.StartsWith("remind:", StringComparison.OrdinalIgnoreCase))
+{
+    var description = input["remind:".Length..].Trim();
+
+    // Use the tool-less agent here — no session needed, this is a one-shot extraction
+    var structuredResponse = await extractorAgent.RunAsync<ReminderInfo>(
+        $"Extract a reminder from this: \"{description}\". " +
+        "If no due date is mentioned, use \"unspecified\". " +
+        "Priority must be Low, Medium, or High.");
+
+    var reminder = structuredResponse.Result;
+    Console.WriteLine($"Assistant (structured): Title='{reminder.Title}', Due='{reminder.DueDate}', Priority='{reminder.Priority}'\n");
+}
+else
+{
+    var response = await agent.RunAsync(input, session);
+    Console.WriteLine($"Assistant: {response.Text}\n");
+}
+//**********************************
+
+//Both agents share the same underlying `chatClient`, so this costs you nothing extra — you're just being explicit about which agent does which job,
+//which is honestly a better design anyway.
+
+
+## Why this is a useful lesson, not just a bug fix
+
+This is your first real taste of something that will define a lot of your AI engineering work: 
+**provider abstraction has limits**. `IChatClient` gives you a unified interface, but the underlying providers still have different capabilities and 
+constraints. A senior AI engineer's instinct here should be exactly what we just did — split responsibilities into agents/calls that match what the 
+provider actually supports, rather than fighting the API. If you ever swap to OpenAI later, this constraint disappears (OpenAI supports both together), 
+but designing around "one agent, one job" is good practice regardless of provider.

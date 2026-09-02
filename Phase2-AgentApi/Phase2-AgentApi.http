@@ -1,0 +1,6 @@
+@Phase2AgentApi_HostAddress = http://localhost:5152
+
+GET {{Phase2AgentApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
