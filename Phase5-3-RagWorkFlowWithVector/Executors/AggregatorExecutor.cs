@@ -8,9 +8,9 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
-using Phase5_3_RagWorkFlowWithVector.Models;
+using Phase6A_FanOutFanIn_VectorStore.Models;
 
-namespace Phase5_3_RagWorkFlowWithVector.Executors;
+namespace Phase6A_FanOutFanIn_VectorStore.Executors;
 
 internal sealed record SynthesizerVerdictDto(
     [property: JsonPropertyName("finalAnswer")] string FinalAnswer,

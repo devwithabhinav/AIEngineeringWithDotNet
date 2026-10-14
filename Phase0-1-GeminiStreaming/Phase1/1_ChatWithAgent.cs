@@ -3,7 +3,7 @@ using GeminiDotnet.Extensions.AI; // Extension methods and helpers to convert cl
 using Microsoft.Agents.AI; // Agent types (AIAgent, AgentSession, etc.)
 using Microsoft.Extensions.AI; // AI related abstractions (IChatClient, AIFunctionFactory, etc.)
 
-namespace Phase0_1_GeminiStreaming.Phase1
+namespace Phase0_1_ChatClientAndAgents.Phase1
 {
     // Small demo class that shows how to create and run a simple AI agent chat loop.
     internal class _1_ChatWithAgent

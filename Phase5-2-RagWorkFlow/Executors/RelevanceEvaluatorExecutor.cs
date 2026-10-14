@@ -1,8 +1,8 @@
 ﻿using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
-using Phase5_2_RagSequentialWorkFlow.Models;
+using Phase6A_FanOutFanIn_InMemory.Models;
 
-namespace Phase5_2_RagSequentialWorkFlow.Executors;
+namespace Phase6A_FanOutFanIn_InMemory.Executors;
 
 internal sealed class RelevanceEvaluatorExecutor(ChatClientAgent judgeAgent)
     : Executor<CandidateAnswer, EvaluationResult>("RelevanceEvaluator")

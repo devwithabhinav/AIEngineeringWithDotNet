@@ -3,13 +3,13 @@ using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
-using Phase5_3_RagWorkFlowWithVector.Agents;
-using Phase5_3_RagWorkFlowWithVector.Config;
-using Phase5_3_RagWorkFlowWithVector.Executors;
-using Phase5_3_RagWorkFlowWithVector.Models;
-using Phase5_3_RagWorkFlowWithVector.VectorStore;
+using Phase6A_FanOutFanIn_VectorStore.Agents;
+using Phase6A_FanOutFanIn_VectorStore.Config;
+using Phase6A_FanOutFanIn_VectorStore.Executors;
+using Phase6A_FanOutFanIn_VectorStore.Models;
+using Phase6A_FanOutFanIn_VectorStore.VectorStore;
 
-namespace Phase5_3_RagWorkFlowWithVector
+namespace Phase6A_FanOutFanIn_VectorStore
 {
     public class Program
     {

@@ -1,4 +1,4 @@
-﻿namespace Phase3_RAG
+﻿namespace Phase3_RagWithEvaluation
 {
     public class EnvLoader
     {

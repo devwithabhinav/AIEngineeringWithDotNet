@@ -1,4 +1,4 @@
-﻿namespace Phase0_1_GeminiStreaming
+﻿namespace Phase0_1_ChatClientAndAgents
 {
     public class EnvLoader
     {

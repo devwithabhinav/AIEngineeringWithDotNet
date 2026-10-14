@@ -1,9 +1,9 @@
 ﻿using GeminiDotnet;
 using GeminiDotnet.Extensions.AI;
 using Microsoft.Extensions.AI;
-using Phase3_RAG.Training;
+using Phase3_RagWithEvaluation.Training;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     public class Program
     {

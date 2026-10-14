@@ -1,4 +1,4 @@
-﻿namespace Phase5_3_RagWorkFlowWithVector.Models;
+﻿namespace Phase6A_FanOutFanIn_VectorStore.Models;
 
 /// <summary>
 /// Output of the retrieval step. Carries the original query plus whatever

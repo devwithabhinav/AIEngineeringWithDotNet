@@ -3,7 +3,7 @@ using Microsoft.Extensions.AI;
 using OpenAI;
 using OpenAI.Embeddings;
 
-namespace Phase5_3_RagWorkFlowWithVector.Config;
+namespace Phase6A_FanOutFanIn_VectorStore.Config;
 
 /// <summary>
 /// Builds an IEmbeddingGenerator&lt;string, Embedding&lt;float&gt;&gt; backed by

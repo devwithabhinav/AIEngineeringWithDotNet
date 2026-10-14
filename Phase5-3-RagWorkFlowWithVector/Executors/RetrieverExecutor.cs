@@ -1,9 +1,9 @@
 ﻿using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.VectorData;
-using Phase5_3_RagWorkFlowWithVector.Models;
-using Phase5_3_RagWorkFlowWithVector.VectorStore;
+using Phase6A_FanOutFanIn_VectorStore.Models;
+using Phase6A_FanOutFanIn_VectorStore.VectorStore;
 
-namespace Phase5_3_RagWorkFlowWithVector.Executors;
+namespace Phase6A_FanOutFanIn_VectorStore.Executors;
 
 /// <summary>
 /// Real semantic retrieval via a vector store collection, injected in.

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Phase5_2_RagSequentialWorkFlow.Executors;
+namespace Phase6A_FanOutFanIn_InMemory.Executors;
 
 /// <summary>
 /// Shape of the JSON the judge agents are prompted to emit (see

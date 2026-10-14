@@ -1,8 +1,8 @@
 ﻿using Microsoft.Agents.AI.Workflows;
 using Microsoft.Agents.AI.Workflows.Reflection;
-using Phase5_2_RagSequentialWorkFlow.Models;
+using Phase6A_FanOutFanIn_InMemory.Models;
 
-namespace Phase5_2_RagSequentialWorkFlow.Executors;
+namespace Phase6A_FanOutFanIn_InMemory.Executors;
 
 /// <summary>
 /// Deterministic, non-agent executor. Not every node needs an LLM behind it -

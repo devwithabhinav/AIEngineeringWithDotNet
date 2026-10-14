@@ -1,13 +1,13 @@
 ﻿using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.AI;
-using Phase5_2_RagSequentialWorkFlow.Agents;
-using Phase5_2_RagSequentialWorkFlow.Config;
-using Phase5_2_RagSequentialWorkFlow.Executors;
-using Phase5_2_RagSequentialWorkFlow.Models;
+using Phase6A_FanOutFanIn_InMemory.Agents;
+using Phase6A_FanOutFanIn_InMemory.Config;
+using Phase6A_FanOutFanIn_InMemory.Executors;
+using Phase6A_FanOutFanIn_InMemory.Models;
 using System.Threading.Tasks;
 
-namespace Phase5_2_RagSequentialWorkFlow
+namespace Phase6A_FanOutFanIn_InMemory
 {
     public class Program
     {

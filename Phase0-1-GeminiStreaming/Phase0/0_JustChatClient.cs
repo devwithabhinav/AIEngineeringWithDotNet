@@ -1,8 +1,8 @@
-﻿using GeminiDotnet;
+using GeminiDotnet;
 using GeminiDotnet.Extensions.AI;
 using Microsoft.Extensions.AI;
 
-namespace Phase0_1_GeminiStreaming.Phase0
+namespace Phase0_1_ChatClientAndAgents.Phase0
 {
     internal class _0_JustChatClient
     {

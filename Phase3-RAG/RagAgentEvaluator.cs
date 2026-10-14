@@ -3,7 +3,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
 using Microsoft.Extensions.AI.Evaluation.Quality;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     public class RagAgentEvaluator
     {

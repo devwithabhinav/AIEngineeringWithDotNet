@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel; // Provides attributes such as DescriptionAttribute used to describe tools for the agent
 
-namespace Phase0_1_GeminiStreaming.Phase1
+namespace Phase0_1_ChatClientAndAgents.Phase1
 {
     // AgentTools is a simple container of helper methods ("tools") the AI agent
     // can call. Each public method represents a callable tool and is annotated

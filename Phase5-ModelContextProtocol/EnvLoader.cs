@@ -1,4 +1,4 @@
-﻿namespace Phase5_ModelContextProtocol
+﻿namespace Phase5_McpCodebaseAssistant
 {
     public class EnvLoader
     {

@@ -1,4 +1,4 @@
-﻿namespace Phase5_3_RagWorkFlowWithVector
+﻿namespace Phase6A_FanOutFanIn_VectorStore
 {
     public class EnvLoader
     {

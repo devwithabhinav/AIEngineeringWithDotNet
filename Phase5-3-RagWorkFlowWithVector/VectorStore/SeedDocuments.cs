@@ -1,4 +1,4 @@
-﻿namespace Phase5_3_RagWorkFlowWithVector.VectorStore
+﻿namespace Phase6A_FanOutFanIn_VectorStore.VectorStore
 {
     public static class SeedDocuments
     {

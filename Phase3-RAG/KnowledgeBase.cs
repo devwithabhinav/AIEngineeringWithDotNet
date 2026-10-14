@@ -3,7 +3,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     public class KnowledgeBase : IKnowledgeBase
     {

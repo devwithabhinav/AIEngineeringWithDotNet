@@ -1,4 +1,4 @@
-﻿namespace Phase5_2_RagSequentialWorkFlow.Models;
+﻿namespace Phase6A_FanOutFanIn_InMemory.Models;
 
 /// <summary>
 /// Output of the retrieval step. Carries the original query plus whatever

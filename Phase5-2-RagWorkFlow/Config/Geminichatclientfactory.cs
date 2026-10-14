@@ -3,7 +3,7 @@ using Microsoft.Extensions.AI;
 using OpenAI;
 using OpenAI.Chat;
 
-namespace Phase5_2_RagSequentialWorkFlow.Config;
+namespace Phase6A_FanOutFanIn_InMemory.Config;
 
 /// <summary>
 /// Builds an IChatClient backed by Gemini, using Google's OpenAI-compatible

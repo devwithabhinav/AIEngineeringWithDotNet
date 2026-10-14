@@ -1,6 +1,6 @@
 ﻿using Microsoft.Agents.AI;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     public interface IKnowledgeBase
     {

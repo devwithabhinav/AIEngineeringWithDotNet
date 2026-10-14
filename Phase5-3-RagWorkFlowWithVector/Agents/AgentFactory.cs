@@ -1,7 +1,7 @@
 ﻿using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 
-namespace Phase5_3_RagWorkFlowWithVector.Agents;
+namespace Phase6A_FanOutFanIn_VectorStore.Agents;
 
 /// <summary>
 /// Creates the four role-specific agents. Each is a thin instructions

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
-using Phase5_2_RagSequentialWorkFlow.Models;
+using Phase6A_FanOutFanIn_InMemory.Models;
 
-namespace Phase5_2_RagSequentialWorkFlow.Executors;
+namespace Phase6A_FanOutFanIn_InMemory.Executors;
 
 /// <summary>
 /// Wraps the Generator agent. Custom executors that call an agent are the

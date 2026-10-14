@@ -1,4 +1,4 @@
-﻿namespace Phase0_1_GeminiStreaming.Phase1
+﻿namespace Phase0_1_ChatClientAndAgents.Phase1
 {
     public class StructuredOutput_ResponseModel
     {

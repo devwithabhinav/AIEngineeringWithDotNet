@@ -4,7 +4,7 @@ using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.AI;
 
-namespace Phase4_MultiAgentWorkflow
+namespace Phase4_SequentialMultiAgentWorkflow
 {
     public class Program
     {

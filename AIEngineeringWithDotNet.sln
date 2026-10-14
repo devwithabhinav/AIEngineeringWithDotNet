@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase3-RAG", "Phase3-RAG\Phase3-RAG.csproj", "{7C07E3D3-E1DA-4222-B90F-341F40CFBE50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase3-RagWithEvaluation", "Phase3-RAG\Phase3-RagWithEvaluation.csproj", "{7C07E3D3-E1DA-4222-B90F-341F40CFBE50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase0-1-GeminiStreaming", "Phase0-1-GeminiStreaming\Phase0-1-GeminiStreaming.csproj", "{9072C676-0AA0-8ED4-ADF9-51F993465B75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase0-1-ChatClientAndAgents", "Phase0-1-GeminiStreaming\Phase0-1-ChatClientAndAgents.csproj", "{9072C676-0AA0-8ED4-ADF9-51F993465B75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase2-AgentApi", "Phase2-AgentApi\Phase2-AgentApi.csproj", "{7525EBCF-A17F-F922-C43B-E5B1395F04D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase4-MultiAgentWorkflow", "Phase4-MultiAgentWorkflow\Phase4-MultiAgentWorkflow.csproj", "{5772608C-CC91-4FB2-80E7-2E6212537C2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase4-SequentialMultiAgentWorkflow", "Phase4-MultiAgentWorkflow\Phase4-SequentialMultiAgentWorkflow.csproj", "{5772608C-CC91-4FB2-80E7-2E6212537C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase5-ModelContextProtocol", "Phase5-ModelContextProtocol\Phase5-ModelContextProtocol.csproj", "{DBE3E80A-0695-4B0A-BE71-A80851775FD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase5-McpCodebaseAssistant", "Phase5-ModelContextProtocol\Phase5-McpCodebaseAssistant.csproj", "{DBE3E80A-0695-4B0A-BE71-A80851775FD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase5-2-RagSequentialWorkFlow", "Phase5-2-RagWorkFlow\Phase5-2-RagSequentialWorkFlow.csproj", "{7F35645C-1A3B-4AB4-833C-5DAB295A5459}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase6A-FanOutFanIn-InMemory", "Phase5-2-RagWorkFlow\Phase6A-FanOutFanIn-InMemory.csproj", "{7F35645C-1A3B-4AB4-833C-5DAB295A5459}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase5-3-RagWorkFlowWithVector", "Phase5-3-RagWorkFlowWithVector\Phase5-3-RagWorkFlowWithVector.csproj", "{13215D02-47D9-4A6D-B92F-27FDAB994B27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase6A-FanOutFanIn-VectorStore", "Phase5-3-RagWorkFlowWithVector\Phase6A-FanOutFanIn-VectorStore.csproj", "{13215D02-47D9-4A6D-B92F-27FDAB994B27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

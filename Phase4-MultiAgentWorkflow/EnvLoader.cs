@@ -1,4 +1,4 @@
-﻿namespace Phase4_MultiAgentWorkflow
+﻿namespace Phase4_SequentialMultiAgentWorkflow
 {
     public class EnvLoader
     {

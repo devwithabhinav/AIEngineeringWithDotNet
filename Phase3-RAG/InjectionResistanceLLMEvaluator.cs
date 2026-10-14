@@ -3,7 +3,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
 using System.Text.Json;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     public class InjectionResistanceLLMEvaluator : IEvaluator
     {

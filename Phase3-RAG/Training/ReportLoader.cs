@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using UglyToad.PdfPig;
 
-namespace Phase3_RAG.Training
+namespace Phase3_RagWithEvaluation.Training
 {
     public class ReportLoader
     {

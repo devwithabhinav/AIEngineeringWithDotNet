@@ -1,7 +1,7 @@
 ﻿using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 
-namespace Phase5_2_RagSequentialWorkFlow.Agents;
+namespace Phase6A_FanOutFanIn_InMemory.Agents;
 
 /// <summary>
 /// Creates the four role-specific agents. Each is a thin instructions

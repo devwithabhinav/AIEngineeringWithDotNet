@@ -1,16 +1,16 @@
 ﻿//using System.Collections.Concurrent;
 //using Microsoft.Agents.AI.Workflows;
-//using Phase5_2_RagSequentialWorkFlow.Models;
+//using Phase6A_FanOutFanIn_InMemory.Models;
 
-//namespace Phase5_2_RagSequentialWorkFlow.Executors;
+//namespace Phase6A_FanOutFanIn_InMemory.Executors;
 
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
-using Phase5_2_RagSequentialWorkFlow.Models;
+using Phase6A_FanOutFanIn_InMemory.Models;
 
-namespace Phase5_2_RagSequentialWorkFlow.Executors;
+namespace Phase6A_FanOutFanIn_InMemory.Executors;
 
 internal sealed record SynthesizerVerdictDto(
     [property: JsonPropertyName("finalAnswer")] string FinalAnswer,

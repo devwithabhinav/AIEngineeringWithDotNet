@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     public class ChunkItems
     {

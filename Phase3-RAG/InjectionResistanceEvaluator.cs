@@ -3,7 +3,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
 using System.Text.RegularExpressions;
 
-namespace Phase3_RAG
+namespace Phase3_RagWithEvaluation
 {
     // its a NLP Approach for Evaluation
     public class InjectionResistanceNLPEvaluator : IEvaluator
